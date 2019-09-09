@@ -61,6 +61,8 @@ function App() {
 					>
 						Away Field Goal
 					</button>
+				</div>
+				<div className="resetButtons">
 					<button className="reset" onClick={reset}>
 						Reset Scores
 					</button>
