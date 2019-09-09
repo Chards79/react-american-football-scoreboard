@@ -7,6 +7,12 @@ function App() {
 	//TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
 	const [homeValue, setHomeValue] = useState(0);
 	const [awayValue, setAwayValue] = useState(0);
+
+	const reset = () => {
+		setHomeValue(0);
+		setAwayValue(0);
+	};
+
 	return (
 		<div className="container">
 			<section className="scoreboard">
@@ -54,6 +60,9 @@ function App() {
 						onClick={() => setAwayValue(awayValue + 3)}
 					>
 						Away Field Goal
+					</button>
+					<button className="reset" onClick={reset}>
+						Reset Scores
 					</button>
 				</div>
 			</section>
